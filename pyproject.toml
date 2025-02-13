@@ -5,8 +5,8 @@ description = "Configuration helper for syslog-ng."
 authors = ["Attila Szakacs <szakacs.attila96@gmail.com>"]
 readme = "README.md"
 license = "GPL-3.0-only"
-homepage = "https://github.com/alltilla/syslog-ng-cfg-helper"
-repository = "https://github.com/alltilla/syslog-ng-cfg-helper"
+homepage = "https://github.com/syslog-ng/syslog-ng-cfg-helper"
+repository = "https://github.com/syslog-ng/syslog-ng-cfg-helper"
 keywords = ["syslog-ng", "configuration", "cfg"]
 classifiers = [
     "Environment :: Console",
