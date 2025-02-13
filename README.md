@@ -27,7 +27,7 @@ syslog-ng-cfg-helper --context parser --driver csv-parser
 ```
 
 ### Example
-[![Example](https://raw.githubusercontent.com/alltilla/syslog-ng-cfg-helper/assets/example.gif)](https://raw.githubusercontent.com/alltilla/syslog-ng-cfg-helper/assets/example.gif)
+[![Example](https://raw.githubusercontent.com/syslog-ng/syslog-ng-cfg-helper/assets/example.gif)](https://raw.githubusercontent.com/syslog-ng/syslog-ng-cfg-helper/assets/example.gif)
 
 ## Development
 The tool is still in development, but most of the drivers are supported.
@@ -55,7 +55,5 @@ The [Makefile](https://github.com/alltilla/syslog-ng-cfg-helper/blob/master/Make
   * `make db SYSLOG_NG_SOURCE_DIR=/path/to/syslog-ng` creates a tarball from the state of the syslog-ng source dir and generates the option database.
   * `make package` creates the pip package.
 
-## Community
-You can reach out to the syslog-ng community on Discord:
-
-[![Axoflow Discord Server](https://discordapp.com/api/guilds/1082023686028148877/widget.png?style=banner2)](https://discord.gg/E65kP9aZGm)
+# NOTE
+This is a retro fork of [axosyslog-cfg-helper](https://github.com/alltilla/axosyslog-cfg-helper), as that no longer supports syslog-ng.
