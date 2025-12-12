@@ -13,9 +13,13 @@ SYSLOG_NG_WORKING_DIR := $(WORKING_DIR)/syslog-ng-source
 SYSLOG_NG_TARBALL := $(WORKING_DIR)/syslog-ng.tar.gz
 
 bison:
-	wget https://ftp.gnu.org/gnu/bison/bison-3.7.6.tar.gz -O /tmp/bison.tar.gz
+    BISON_VERSION="3.7.6"
+    # the "official" gnu source - https://ftp.gnu.org/gnu/bison//bison-${BISON_VERSION}.tar.gz - fails more and more, use our mirror
+    URL="https://github.com/syslog-ng/syslog-ng-deps/raw/refs/heads/main/bison/${BISON_VERSION}/bison.tar.gz"
+    
+	wget ${URL} -O /tmp/bison.tar.gz
 	tar -xzf /tmp/bison.tar.gz -C /tmp
-	cd /tmp/bison-3.7.6 && ./configure --prefix=$(BISON_INSTALL_PATH) --disable-nls && make -j && make install
+	cd /tmp/bison-${BISON_VERSION} && ./configure --prefix=$(BISON_INSTALL_PATH) --disable-nls && make -j && make install
 
 venv:
 	poetry install
